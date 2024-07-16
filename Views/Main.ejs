@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Discussion Platform</title>
+  <link rel="stylesheet" href="./stylesheets/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-blue-600 text-white p-4">
+    <h1 class="text-2xl">Coding Discussion Platform</h1>
+  </header>
+
+  <main class="container mx-auto mt-8">
+    <div class="mb-6">
+      <form id="postForm" class="bg-white p-4 rounded shadow-md">
+        <textarea id="code" name="code" rows="5" class="w-full p-2 border border-gray-300 rounded mb-4" placeholder="Post your code here..."></textarea>
+        <input type="file" id="image" name="image" class="mb-4">
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded">Post</button>
+      </form>
+    </div>
+
+    <div id="posts">
+      <!-- Posts will be dynamically added here -->
+    </div>
+  </main>
+
+  <footer class="bg-blue-600 text-white p-4 mt-8">
+    <p class="text-center">&copy; 2024 Coding Discussion Platform</p>
+  </footer>
+
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
