@@ -17,7 +17,15 @@
         <div class="text-white">Contact Us</div>
       </div>
     </nav>
-
+  
+    <% if (messages.error && messages.error.length > 0) { %>
+      <div class="text-red-500 font-extrabold w-full h-10 border-double border-2 bg-yellow-200  border-cyan-100">
+          <% messages.error.forEach(msg => { %>
+              <p class="text-center">  Something Went Wrong </p>
+          <% }) %>
+      </div>
+  <% } %>
+    
     <section class="flex h-screen">
       <div
         class="bg-black w-6/12 flex flex-col p-5 items-center justify-center"

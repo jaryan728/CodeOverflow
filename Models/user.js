@@ -9,7 +9,10 @@ const userSchema=mongoose.Schema(
         image:String,
         mail:String,
         pass:String,
-    
+        posts:[{
+             type:mongoose.Schema.Types.ObjectId,
+        ref:"posts"
+        }],
         address:String
     }
 )
